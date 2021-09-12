@@ -22,11 +22,12 @@ def loginsys():
         print("ok")
         username = input("create a username: ")
         password = input("create a password: ")
-        g = open("credentials.txt", "rt")
-        global f 
-        g.writelines(username + "\n")
-        g.writelines(password + "\n")
-        g.close()
+        global f
+        f = open("credentials.txt", "a")
+        f.writelines(username + "\n")
+        f.writelines(password + "\n")
+        f.close()
+        root.quit()
   
 
     if x1 == "login":
@@ -64,7 +65,7 @@ def loginsys():
 
                 l4.pack()
                 root3.mainloop()
-    button = Button(root1, text="submit", command=retrieve).grid(row=4, column=0)
+        button = Button(root1, text="submit", command=retrieve).grid(row=4, column=0)
 
 
 
