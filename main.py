@@ -64,7 +64,7 @@ def loginsys():
 
                 l4.pack()
                 root3.mainloop()
-                button = Button(root1, text="submit", command=retrieve).grid(row=4, column=0)
+    button = Button(root1, text="submit", command=retrieve).grid(row=4, column=0)
 
 
 
