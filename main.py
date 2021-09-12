@@ -26,6 +26,7 @@ def loginsys():
         f = open("credentials.txt", "a")
         f.writelines(username + "\n")
         f.writelines(password + "\n")
+        print("signup complete")
         f.close()
         root.quit()
   
