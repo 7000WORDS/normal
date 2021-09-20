@@ -15,7 +15,6 @@ x.grid(row=2, column=0)
 
 
 
-
 def loginsys():
     x1 = x.get()
     if x1 == "signup":
