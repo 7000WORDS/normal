@@ -22,18 +22,18 @@ def loginsys():
         print("signup system online")
         
         l1 = Label(root4, text = "username").grid(row= 0, column = 0)
-        my_entry = Entry(root4)
-        my_entry.grid(row = 0, column = 1)
+        my_entry3 = Entry(root4)
+        my_entry3.grid(row = 0, column = 1)
 
         l2 = Label(root4, text = "password").grid(row = 1, column = 0)
-        my_entry2 = Entry(root4)
-        my_entry2.grid(row = 1 , column = 0)
+        my_entry4 = Entry(root4)
+        my_entry4.grid(row = 1 , column = 0)
         
         global f
 
         f = open("credentials.txt", "a")
-        f.writelines(username + "\n")
-        f.writelines(password + "\n")
+        f.writelines(my_entry3 + "\n")
+        f.writelines(my_entry4 + "\n")
         print("signup complete")
         f.close()
       root.quit()
