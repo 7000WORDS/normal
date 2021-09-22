@@ -17,17 +17,26 @@ x.grid(row=2, column=0)
 
 def loginsys():
     x1 = x.get()
-    if x1 == "signup":
-        print("ok")
-        username = input("create a username: ")
-        password = input("create a password: ")
+    if x1 == "signup":]
+        root4 = Tk()
+        print("signup system online")
+        
+        l1 = Label(root4, text = "username").grid(row= 0, column = 0)
+        my_entry = Entry(root4)
+        my_entry.grid(row = 0, column = 1)
+
+        l2 = Label(root4, text = "password").grid(row = 1, column = 0)
+        my_entry2 = Entry(root4)
+        my_entry2.grid(row = 1 , column = 0)
+        
         global f
+
         f = open("credentials.txt", "a")
         f.writelines(username + "\n")
         f.writelines(password + "\n")
         print("signup complete")
         f.close()
-        root.quit()
+      root.quit()
   
 
     if x1 == "login":
