@@ -6,14 +6,10 @@ f = open("credentials.txt", "rt")
 
 l1 = Label(root, text = "This is a login/signup system").grid(row=0, column=0)
 
-
 option = Label(root, text="Do you want to signup or login").grid(row=1, column=0)
-
 
 x = Entry(root)
 x.grid(row=2, column=0)
-
-
 
 def loginsys():
     x1 = x.get()
