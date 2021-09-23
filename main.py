@@ -29,15 +29,19 @@ def loginsys():
         my_entry4 = Entry(root4)
         my_entry4.grid(row = 1 , column = 1)
         
+        
         global f
-
-        f = open("credentials.txt", "a")
-        f.writelines(str(my_entry3.get()) + "\n")
-        f.writelines(str(my_entry4.get()) + "\n")
-        print("signup complete")
-        f.close()
+      
+        def signup():
+            f = open("credentials.txt", "a")
+            f.writelines(str(my_entry3.get()) + "\n")
+            f.writelines(str(my_entry4.get()) + "\n")
+            print("signup complete")
+            f.close()
+        button2  = Button(root4, text = "submit", command =  signup).grid(row = 4, column=0)
+        root4.mainloop()
         root.quit()
-  
+    
 
     if x1 == "login":
         root1 = Tk()
